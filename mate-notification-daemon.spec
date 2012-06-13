@@ -1,7 +1,7 @@
 Summary:	MATE Notification Daemon
 Name:		mate-notification-daemon
 Version:	1.2.0
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Servers
 URL:		http://mate-desktop.org
@@ -22,6 +22,7 @@ BuildRequires:	pkgconfig(x11)
 Provides:	virtual-notification-daemon
 Conflicts:	xfce4-notifyd
 
+Requires:	libmatenotify
 Requires(post,preun): mate-conf
 
 %description

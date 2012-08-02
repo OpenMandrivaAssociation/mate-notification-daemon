@@ -15,7 +15,7 @@ BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	pkgconfig(libcanberra-gtk)
 BuildRequires:	pkgconfig(libmatenotify)
-BuildRequires:	pkgconfig(libwnck-1.0)
+BuildRequires:	pkgconfig(libmatewnck)
 BuildRequires:	pkgconfig(mateconf-2.0)
 BuildRequires:	pkgconfig(x11)
 

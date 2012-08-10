@@ -19,7 +19,7 @@ BuildRequires:	pkgconfig(libmatewnck)
 BuildRequires:	pkgconfig(mateconf-2.0)
 BuildRequires:	pkgconfig(x11)
 
-Provides:	virtual-notification-daemon
+#Provides:	virtual-notification-daemon
 Conflicts:	xfce4-notifyd
 
 Requires:	libmatenotify

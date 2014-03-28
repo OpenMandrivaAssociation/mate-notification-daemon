@@ -17,7 +17,7 @@ BuildRequires:	pkgconfig(libcanberra-gtk)
 BuildRequires:	pkgconfig(libnotify)
 BuildRequires:	pkgconfig(libwnck-1.0)
 Requires:	libnotify
-#Provides:	virtual-notification-daemon
+Provides:	virtual-notification-daemon
 Conflicts:	xfce4-notifyd
 
 %description

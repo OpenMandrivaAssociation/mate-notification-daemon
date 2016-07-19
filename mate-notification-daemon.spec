@@ -2,8 +2,8 @@
 
 Summary:	MATE Notification Daemon
 Name:		mate-notification-daemon
-Version:	1.8.0
-Release:	2
+Version:	1.14.1
+Release:	1
 License:	GPLv2+
 Group:		System/Servers
 Url:		http://mate-desktop.org
@@ -12,10 +12,10 @@ BuildRequires:	intltool
 BuildRequires:	mate-common
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(glib-2.0)
-BuildRequires:	pkgconfig(gtk+-2.0)
-BuildRequires:	pkgconfig(libcanberra-gtk)
+BuildRequires:	pkgconfig(gtk+-3.0)
+BuildRequires:	pkgconfig(libcanberra-gtk3)
 BuildRequires:	pkgconfig(libnotify)
-BuildRequires:	pkgconfig(libwnck-1.0)
+BuildRequires:	pkgconfig(libwnck-3.0)
 Requires:	libnotify
 Provides:	virtual-notification-daemon
 Conflicts:	xfce4-notifyd
@@ -30,7 +30,7 @@ Desktop Notifications spec (http://galago.info/specs/notification/index.php).
 NOCONFIGURE=yes ./autogen.sh
 
 %build
-%configure2_5x --disable-static
+%configure2_5x --disable-static --with-gtk=3.0
 
 %make
 

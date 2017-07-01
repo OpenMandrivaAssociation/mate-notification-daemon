@@ -44,7 +44,7 @@ Desktop Notifications spec (http://galago.info/specs/notification/index.php).
 %doc AUTHORS COPYING ChangeLog README
 %{_bindir}/mate-notification-properties
 %{_libexecdir}/%{name}
-%dir %{_libdir}/mate-notification-daemon/
+%dir %{_libdir}/mate-notification-daemon
 %{_libdir}/mate-notification-daemon/engines/libcoco.so
 %{_libdir}/mate-notification-daemon/engines/libnodoka.so
 %{_libdir}/mate-notification-daemon/engines/libslider.so
@@ -52,7 +52,6 @@ Desktop Notifications spec (http://galago.info/specs/notification/index.php).
 %{_datadir}/applications/*.desktop
 %{_datadir}/dbus-1/services/org.freedesktop.mate.Notifications.service
 %{_datadir}/glib-2.0/schemas/org.mate.NotificationDaemon.gschema.xml
-%dir %{_datadir}/mate-notification-daemon/
 %{_datadir}/mate-notification-daemon/mate-notification-properties.ui
 %{_iconsdir}/hicolor/*/apps/*
 %{_mandir}/man1/mate-notification-properties.1*

@@ -45,6 +45,7 @@ Desktop Notifications spec (http://galago.info/specs/notification/index.php).
 %{_bindir}/mate-notification-properties
 %{_libexecdir}/%{name}
 %dir %{_libdir}/mate-notification-daemon
+%dir %{_libdir}/mate-notification-daemon/engines
 %{_libdir}/mate-notification-daemon/engines/libcoco.so
 %{_libdir}/mate-notification-daemon/engines/libnodoka.so
 %{_libdir}/mate-notification-daemon/engines/libslider.so

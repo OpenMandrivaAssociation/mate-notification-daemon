@@ -50,7 +50,7 @@ per the Desktop Notifications spec
 %{_libdir}/mate-notification-daemon/engines/libnodoka.so
 %{_libdir}/mate-notification-daemon/engines/libslider.so
 %{_libdir}/mate-notification-daemon/engines/libstandard.so
-%{_datadir}/applications/mate-notification-properties.desktop.desktop
+%{_datadir}/applications/mate-notification-properties.desktop
 %{_datadir}/dbus-1/services/org.freedesktop.mate.Notifications.service
 %{_datadir}/glib-2.0/schemas/org.mate.NotificationDaemon.gschema.xml
 %{_datadir}/mate-notification-daemon/mate-notification-properties.ui
@@ -78,3 +78,4 @@ per the Desktop Notifications spec
 
 %check
 desktop-file-validate %{buildroot}/%{_datadir}/applications/mate-notification-properties.desktop
+

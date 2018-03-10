@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   mate-notification-daemon-1.14.1.tar.xz: 10e863c16112b45935d6d5e6e003088df43f87ab
+sources:
+  mate-notification-daemon-1.18.0.tar.xz: 8e0dc5feb58a07d44d2f88057a2a238acd5c20b8

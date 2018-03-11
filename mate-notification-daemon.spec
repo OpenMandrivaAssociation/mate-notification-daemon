@@ -3,7 +3,7 @@
 Summary:	MATE Notification Daemon
 Name:		mate-notification-daemon
 Version:	1.18.0
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Servers
 Url:		https://mate-desktop.org
@@ -15,7 +15,7 @@ BuildRequires:	mate-common
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(gio-2.0)
 BuildRequires:	pkgconfig(glib-2.0)
-BuildRequires:	pkgconfig(gdk-pixbuf-2.0) 
+BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(libcanberra-gtk3)
 BuildRequires:	pkgconfig(libnotify)
@@ -78,4 +78,3 @@ per the Desktop Notifications spec
 
 %check
 desktop-file-validate %{buildroot}/%{_datadir}/applications/mate-notification-properties.desktop
-

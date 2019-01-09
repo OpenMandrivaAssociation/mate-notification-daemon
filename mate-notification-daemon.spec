@@ -2,7 +2,7 @@
 
 Summary:	MATE Notification Daemon
 Name:		mate-notification-daemon
-Version:	1.20.0
+Version:	1.20.2
 Release:	1
 License:	GPLv2+
 Group:		System/Servers
@@ -61,17 +61,17 @@ per the Desktop Notifications spec
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 #NOCONFIGURE=yes ./autogen.sh
 %configure \
 	 --disable-schemas-compile \
 	 %{nil}
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 # locales
 %find_lang %{name} --with-gnome --all-name

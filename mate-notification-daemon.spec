@@ -55,7 +55,7 @@ per the Desktop Notifications spec
 %{_datadir}/applications/mate-notification-properties.desktop
 %{_datadir}/dbus-1/services/org.freedesktop.mate.Notifications.service
 %{_datadir}/glib-2.0/schemas/org.mate.NotificationDaemon.gschema.xml
-%{_datadir}/mate-notification-daemon/mate-notification-properties.ui
+#{_datadir}/mate-notification-daemon/mate-notification-properties.ui
 %{_iconsdir}/hicolor/*/apps/*
 %{_mandir}/man1/mate-notification-properties.1*
 

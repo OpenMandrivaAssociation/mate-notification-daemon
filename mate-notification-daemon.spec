@@ -10,6 +10,7 @@ Url:		https://mate-desktop.org
 Source0:	https://pub.mate-desktop.org/releases/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:	autoconf-archive
+BuildRequires:	libxml2-utils
 BuildRequires:	desktop-file-utils
 BuildRequires:	intltool
 BuildRequires:	mate-common

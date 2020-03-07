@@ -2,13 +2,15 @@
 
 Summary:	MATE Notification Daemon
 Name:		mate-notification-daemon
-Version:	1.22.1
+Version:	1.24.0
 Release:	1
 License:	GPLv2+
 Group:		System/Servers
 Url:		https://mate-desktop.org
 Source0:	https://pub.mate-desktop.org/releases/%{url_ver}/%{name}-%{version}.tar.xz
 
+BuildRequires:	autoconf-archive
+BuildRequires:	libxml2-utils
 BuildRequires:	desktop-file-utils
 BuildRequires:	intltool
 BuildRequires:	mate-common
@@ -53,7 +55,7 @@ per the Desktop Notifications spec
 %{_datadir}/applications/mate-notification-properties.desktop
 %{_datadir}/dbus-1/services/org.freedesktop.mate.Notifications.service
 %{_datadir}/glib-2.0/schemas/org.mate.NotificationDaemon.gschema.xml
-%{_datadir}/mate-notification-daemon/mate-notification-properties.ui
+#{_datadir}/mate-notification-daemon/mate-notification-properties.ui
 %{_iconsdir}/hicolor/*/apps/*
 %{_mandir}/man1/mate-notification-properties.1*
 

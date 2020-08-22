@@ -22,6 +22,7 @@ BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(libcanberra-gtk3)
 BuildRequires:	pkgconfig(libnotify)
 BuildRequires:	pkgconfig(libwnck-3.0)
+BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(mate-desktop-2.0)
 BuildRequires:	pkgconfig(x11)
 

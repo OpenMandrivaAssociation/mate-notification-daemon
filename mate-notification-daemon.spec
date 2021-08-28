@@ -48,6 +48,7 @@ per the Desktop Notifications spec
 %doc AUTHORS COPYING ChangeLog README
 %{_bindir}/mate-notification-properties
 %{_libexecdir}/%{name}
+%{_libexecdir}/mate-notification-applet
 %dir %{_libdir}/mate-notification-daemon
 %dir %{_libdir}/mate-notification-daemon/engines
 %{_libdir}/mate-notification-daemon/engines/libcoco.so
@@ -56,6 +57,8 @@ per the Desktop Notifications spec
 %{_libdir}/mate-notification-daemon/engines/libstandard.so
 %{_datadir}/applications/mate-notification-properties.desktop
 %{_datadir}/dbus-1/services/org.freedesktop.mate.Notifications.service
+%{_datadir}/dbus-1/services/org.mate.panel.applet.MateNotificationAppletFactory.service
+%{_datadir}/mate-panel/applets/org.mate.applets.MateNotificationApplet.mate-panel-applet
 %{_datadir}/glib-2.0/schemas/org.mate.NotificationDaemon.gschema.xml
 #{_datadir}/mate-notification-daemon/mate-notification-properties.ui
 %{_iconsdir}/hicolor/*/apps/*

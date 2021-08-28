@@ -24,6 +24,7 @@ BuildRequires:	pkgconfig(libnotify)
 BuildRequires:	pkgconfig(libwnck-3.0)
 BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(mate-desktop-2.0)
+BuildRequires:	pkgconfig(libmatepanelapplet-4.0)
 BuildRequires:	pkgconfig(x11)
 
 Requires:	libnotify

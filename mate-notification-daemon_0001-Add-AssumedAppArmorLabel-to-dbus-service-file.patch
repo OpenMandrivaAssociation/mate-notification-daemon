@@ -1,0 +1,28 @@
+From ad27c3ccaffc5fd36189073a713f7536563ab816 Mon Sep 17 00:00:00 2001
+From: Dani Llewellyn <diddledani@ubuntu.com>
+Date: Mon, 27 Sep 2021 19:43:59 +0100
+Subject: [PATCH] Add AssumedAppArmorLabel to dbus service file
+
+Snap packages are unable to trigger the notification daemon in a fully
+confined package, because the snapd apparmor rules state that the target
+of the dbus call must specify that it is labelled `unconfined`. See
+https://forum.snapcraft.io/t/snapd-doesnt-allow-notification-daemon-to-be-activatable/22912/1
+for the details.
+
+Signed-off-by: Dani Llewellyn <diddledani@ubuntu.com>
+---
+ data/org.freedesktop.mate.Notifications.service.in | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/data/org.freedesktop.mate.Notifications.service.in b/data/org.freedesktop.mate.Notifications.service.in
+index 343f57f..4ce7697 100644
+--- a/data/org.freedesktop.mate.Notifications.service.in
++++ b/data/org.freedesktop.mate.Notifications.service.in
+@@ -1,3 +1,4 @@
+ [D-BUS Service]
+ Name=org.freedesktop.Notifications
+ Exec=@LIBEXECDIR@/mate-notification-daemon
++AssumedAppArmorLabel=unconfined
+-- 
+2.36.1
+

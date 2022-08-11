@@ -3,12 +3,12 @@
 Summary:	MATE Notification Daemon
 Name:		mate-notification-daemon
 Version:	1.26.0
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		System/Servers
 Url:		https://mate-desktop.org
 Source0:	https://pub.mate-desktop.org/releases/%{url_ver}/%{name}-%{version}.tar.xz
-
+Patch1:		mate-notification-daemon_0001-Add-AssumedAppArmorLabel-to-dbus-service-file.patch
 BuildRequires:	autoconf-archive
 BuildRequires:	libxml2-utils
 BuildRequires:	desktop-file-utils
@@ -26,9 +26,9 @@ BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(mate-desktop-2.0)
 BuildRequires:	pkgconfig(libmatepanelapplet-4.0)
 BuildRequires:	pkgconfig(x11)
+BuildRequires:	pkgconfig(gtk-layer-shell-0)
 
 Requires:	libnotify
-
 Provides:	virtual-notification-daemon
 #Conflicts:	xfce4-notifyd
 
@@ -62,19 +62,20 @@ per the Desktop Notifications spec
 %{_datadir}/glib-2.0/schemas/org.mate.NotificationDaemon.gschema.xml
 #{_datadir}/mate-notification-daemon/mate-notification-properties.ui
 %{_iconsdir}/hicolor/*/apps/*
-%{_mandir}/man1/mate-notification-properties.1*
+%doc %{_mandir}/man1/mate-notification-properties.1*
 
 #---------------------------------------------------------------------------
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
 %build
 #NOCONFIGURE=yes ./autogen.sh
 %configure \
-	 --disable-schemas-compile \
-	 %{nil}
+	--disable-schemas-compile \
+	--enable-x11 \
+	--enable-wayland
+
 %make_build
 
 %install

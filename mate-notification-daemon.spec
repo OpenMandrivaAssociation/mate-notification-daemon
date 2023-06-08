@@ -2,13 +2,13 @@
 
 Summary:	MATE Notification Daemon
 Name:		mate-notification-daemon
-Version:	1.26.0
-Release:	3
+Version:	1.26.1
+Release:	1
 License:	GPLv2+
 Group:		System/Servers
 Url:		https://mate-desktop.org
 Source0:	https://pub.mate-desktop.org/releases/%{url_ver}/%{name}-%{version}.tar.xz
-Patch1:		mate-notification-daemon_0001-Add-AssumedAppArmorLabel-to-dbus-service-file.patch
+
 BuildRequires:	autoconf-archive
 BuildRequires:	libxml2-utils
 BuildRequires:	desktop-file-utils

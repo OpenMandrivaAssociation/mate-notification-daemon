@@ -1,13 +1,13 @@
-%define url_ver %(echo %{version}|cut -d. -f1,2)
+%define mate_ver	%(echo %{version}|cut -d. -f1,2)
 
 Summary:	MATE Notification Daemon
 Name:		mate-notification-daemon
-Version:	1.26.1
+Version:	1.28.0
 Release:	1
 License:	GPLv2+
 Group:		System/Servers
 Url:		https://mate-desktop.org
-Source0:	https://pub.mate-desktop.org/releases/%{url_ver}/%{name}-%{version}.tar.xz
+Source0:	https://pub.mate-desktop.org/releases/%{mate_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:	autoconf-archive
 BuildRequires:	libxml2-utils
@@ -49,6 +49,7 @@ per the Desktop Notifications spec
 %{_bindir}/mate-notification-properties
 %{_libexecdir}/%{name}
 %{_libexecdir}/mate-notification-applet
+%{_sysconfdir}/xdg/autostart/mate-notification-daemon.desktop
 %dir %{_libdir}/mate-notification-daemon
 %dir %{_libdir}/mate-notification-daemon/engines
 %{_libdir}/mate-notification-daemon/engines/libcoco.so

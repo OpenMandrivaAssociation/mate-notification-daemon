@@ -2,7 +2,7 @@
 
 Summary:	MATE Notification Daemon
 Name:		mate-notification-daemon
-Version:	1.28.0
+Version:	1.28.1
 Release:	1
 License:	GPLv2+
 Group:		System/Servers

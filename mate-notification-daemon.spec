@@ -2,12 +2,14 @@
 
 Summary:	MATE Notification Daemon
 Name:		mate-notification-daemon
-Version:	1.28.3
+Version:	1.28.5
 Release:	1
 License:	GPLv2+
 Group:		System/Servers
 Url:		https://mate-desktop.org
-Source0:	https://pub.mate-desktop.org/releases/%{mate_ver}/%{name}-%{version}.tar.xz
+#Source0:	https://pub.mate-desktop.org/releases/%{mate_ver}/%{name}-%{version}.tar.xz
+# Use for now tarball from GitHub because from few months sources at mate-desktop.org was not updated.
+Source0:	https://github.com/mate-desktop/mate-notification-daemon/releases/download/v%{version}/mate-notification-daemon-%{version}.tar.xz
 
 BuildRequires:	automake
 BuildRequires:	libtool-base
